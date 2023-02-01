@@ -1,0 +1,271 @@
+/* estilo del body */
+body{
+    background: rgb(77,99,96);
+    background: linear-gradient(90deg, rgba(77,99,96,1) 0%, rgba(107,129,162,1) 100%, rgba(57,80,84,1) 100%);
+
+}
+/* estilos del Home */
+
+/* Header */
+.fondo-menu{
+    background: rgb(77,99,96);
+background: linear-gradient(90deg, rgba(77,99,96,1) 0%, rgba(66,84,111,1) 100%, rgba(57,80,84,1) 100%);
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-mas{
+    width: 9rem;
+    height: 6rem;
+}
+.img-banner{
+    display: none;
+}
+#banner{
+    
+    height: 100%;
+    width: 100%;
+}
+#logo-carrito{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    margin: 0.6rem;
+}
+.img-main-uno, .img-main-dos{
+    display: flex;
+    justify-content: center;
+}
+
+/* estilos del main  */
+
+.div-main1, .div-main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#imagen-main1, #imagen-main2{
+    width: 70%;
+    height: 70%;
+    box-shadow: 3px 3px 2px;
+}
+.div-titulo1 , .div-titulo2{
+    margin-left: 0.6rem;
+    text-align: center;
+
+}
+/* estilos del footer */
+.div-footer{
+    margin-top: 1rem;
+    box-shadow: -2px -2px;
+}
+.h3-footer{
+    text-align: center;
+    
+}
+/* estilo para tablet */ 
+@media screen and (min-width:600px) {
+.div-grid{
+    display: grid;
+    height: 100vh;
+        grid-template-rows: 0.2fr 3fr 0.2fr;
+    } 
+    .main-index{
+        display: grid;
+        grid-row: 1fr 1fr;
+    }
+        .div-main1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 1rem;
+
+        }
+    
+        .div-main2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 1rem;
+        }
+        #imagen-main1, #imagen-main2{
+            width: 100%;
+            height: 100%;
+        }
+ 
+}
+/* estilos para desktop */
+@media screen and (min-width:1024px){
+    /* grid */
+    .div-grid{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";      
+        gap: 1rem;
+    }
+    
+    .fondo-menu{
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .header-index{
+        grid-area: header;
+    }
+    
+    footer{
+        grid-area: footer;
+       
+    }
+
+    .img-banner{
+        display: block;
+        padding-top: 7rem;
+    }
+    .div-main1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .div-main2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .boton-nav:hover {
+        background-color: rgb(164, 177, 188);
+        border-bottom: 1px;
+        border-left: 1px;
+        box-shadow: 2px 2px 16px ;
+        transition: all 0.2s ease;
+    }
+    
+    
+}
+
+
+                                    /* estilos de producto */
+
+/* estilos del main */
+.main-productos{
+    margin: 3rem;
+    text-align: center;
+}
+.div-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+main div a img{
+    width: 70%;
+    height: 70%;
+    margin: 1rem;
+}
+/* estilos tablet */
+@media screen and (min-width:600px) {
+    .main-productos{
+        margin-top: 2.5rem;
+    }
+    .div-productos{
+        display: grid;
+        grid-template-rows: 1rf repeat(5);
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* estilos desktop */
+@media screen and (min-width:1024px){
+    .main-productos{
+        margin-top: 9rem;
+    }
+    .div-productos{
+        display: grid;
+        grid-template-rows: 1fr repeat(3);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .boton-producto:hover {
+        box-shadow: 3px 3px black;
+    }
+}
+
+
+
+
+
+                                    /* estilos de about */
+/* estilos del main */
+.main-about{
+    margin-top: 110px;
+}
+                                    /* estilos del carrito */
+/* estilos del header */
+.menu-carrito{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(77,99,96);
+background: linear-gradient(90deg, rgba(77,99,96,1) 0%, rgba(66,84,111,1) 100%, rgba(57,80,84,1) 100%);
+    
+
+}
+#boton-home, #boton-eliminar{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+    margin-right: 20px;
+}
+/* estilos del main */
+.carrito-contenedor{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carrito-hijo1{
+    display: flex;
+    align-items: center;
+}
+.nombre-producto{
+    margin-left: 10px;
+}
+#carrito-producto{
+    width: 150px;
+    height: 150px;
+}
+/* estilos del section */
+section{
+    box-shadow: -2px -2px;
+    margin-top: 10px;
+    padding-top: 1px;
+}
+.calcular-envio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.finalizar-compra{
+    text-align: center;
+}
+#boton-calcular, #boton-finalizar{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+} 
+                                /* estilos de contacto */
+#mapa{
+    width: 250px;
+    height: 250px;
+    border: 0;
+    box-shadow: 3px 3px 2px;
+}
+
+
