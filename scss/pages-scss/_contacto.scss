@@ -1,0 +1,73 @@
+// imports
+@import "../base/extend";
+@import "../base/mixin";
+/* estilos de contacto*/
+.contacto-grid{
+
+.header-contacto{
+    nav{
+        ul{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+}
+.contacto-grid{
+    .contenedor-main-contacto{
+        .contacto-main{
+            @extend %flex-mobile;
+            .div-contacto-img{
+                @include centrar-main;
+            }
+    }
+            .titulo-contacto{
+                text-align: center;
+    }
+            .img-contacto{
+                margin-top: 1rem;
+                @include img(70%,70%)
+    }
+}
+}
+/* estilos para tablet */
+@media screen and (min-width:600px){
+.contacto-grid{
+    @include grid-tablet;
+    .contenedor-main-contacto{
+        @include grid-tablet-dos;
+        .contacto-main{
+            @include grid-tablet-tres;
+            .div-contacto-img{
+                justify-content: flex-start;
+                margin-left: 1rem;
+            }
+            .titulo-contacto{
+                text-align: start;
+            }
+            .img-contacto{
+                @include img(80%,80%)
+            }
+        }
+    }
+
+}
+}
+/* estilos para desktop */
+@media screen and (min-width:1024px){
+    .contacto-grid{
+        .header-contacto{
+            .fondo-menu{
+                @include menu-desktop;
+                
+            }
+            .contacto-banner{
+                margin-top: 7rem;
+            }
+            .boton-nav:hover{
+            @include boton-menu;
+            }
+        }
+    
+    }
+}

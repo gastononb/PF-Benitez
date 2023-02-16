@@ -1,0 +1,84 @@
+// imports
+@import "../base/extend";
+@import "../base/mixin";
+/*estilos del carrito*/
+.header-carrito{
+    nav{
+        ul{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.main-carrito{
+    margin-top: 2rem;
+    .carrito-contenedor{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        
+        align-items: center;
+        .carrito-hijo1{
+            display: flex;
+            align-items: center;
+            margin-left: 0.5rem;
+            .nombre-producto{
+                margin-left: 0.6rem;
+            }
+            .carrito-producto{
+                @include img(30%,30%)
+        }
+ }
+    .carrito-hijo2{
+            display: flex !important;
+            justify-content: end !important;
+        }
+    .boton-carrito{
+        @include boton-carrito;
+
+        }
+}}
+.carrito-section{
+    width: 100%;
+    border-top:1.5px solid black ;
+    margin-top: 0.6rem;
+    padding-top: 1px;
+    .valor-envio{
+        margin-left: 0.5rem;
+    }
+    .calcular-envio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .input-carrito{
+            margin-right: 0.5rem
+        }
+        .boton-carrito{
+            @include boton-carrito;
+        }
+        
+    }
+    .finalizar-compra{
+        text-align: center;
+        .boton-carrito{
+            @include boton-carrito;
+        }
+    }
+}
+/* estilos para desktop */
+@media screen and (min-width:1024px){
+    .header-carrito{
+        .fondo-menu{
+            @include menu-desktop;
+        }
+        .boton-nav:hover{
+            @include boton-menu;
+            }
+    }
+    .main-carrito{
+        margin-top: 9rem;
+    }
+    .boton-carrito:hover{
+        @include boton-menu;
+    }
+}

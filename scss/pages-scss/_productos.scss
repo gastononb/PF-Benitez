@@ -1,0 +1,63 @@
+// imports
+@import "../base/extend";
+@import "../base/mixin";
+/*estilos de productos*/
+.productos-header{
+    nav{
+        ul{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.main-productos{
+    margin: 3rem;
+    text-align: center;
+    .div-productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;  
+    }
+    .boton-producto{
+        width: 70%;
+        height: 70%;
+        margin: 1rem;
+        
+    }
+}
+/*estilos para tablet*/
+@media screen and (min-width:600px){
+   .main-productos{
+    margin-top: 2.5rem;
+    .div-productos{
+        display: grid;
+        grid-template-rows:repeat(5, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+   } 
+
+}
+/* estilos desktop */
+@media screen and (min-width:1024px){
+    .productos-header{
+        .fondo-menu{
+            @include menu-desktop;
+        }
+        .boton-nav:hover{
+            @include boton-menu;
+            }
+    }
+    .main-productos{
+        margin-top: 9rem;
+        .div-productos{
+            display: grid;
+        grid-template-rows:repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        .boton-producto:hover {
+            box-shadow: 3px 3px 16px black;
+        }
+        }
+
+    }
+}

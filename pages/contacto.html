@@ -5,67 +5,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta descripcion -->
+    <meta name="description" content="Masmateriales es una empresa de venta de materiales para la contruccion, dedicada a ofrecer la mejor atencion">
+    <!-- meta keywords -->
+    <meta name="keywords" content="ceramica, ceramicas, ceramica cañuelas, ceramica cortines, materiales de contruccion, materiales, revestimientos, pisos, ambiente virtual, catalogo de productos">
+    <!-- link de aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Contacto</title>
+    <title>Contacto|MasMateriales</title>
 </head>
 
 <body>
     <!-- contenido del header -->
-    <header>
-        <div class="div-header">
-
-            <div class="div-logo"><a href=""><img src="../img/LogoMM.png" id="logo-mas" alt="Logo de Mas Materiales"></a></div>
-
-            <nav>
-                <ul>
-                    
-                        <li><a href="">Productos</a></li>
-                    
-                    
-                        <li><a href="">Sobre nosotros</a></li>
-                    
-                    
-                        <li><a href="">Contacto</a></li>
-                    
-                    
-                        <li><a href=""> <img src="../img/carrito.png" id="logo-carrito" alt="imagen de carrito de compras"></a></li>
-                    
-                </ul>
-            </nav>
-        </div>
-        <!-- imagen de banner -->
-        <div> <img src="../img/bannerMM.png" id="banner" alt="imagen con productos de contruccion">
-        </div>
-    </header>
-    <!-- contenido del main -->
-    <main>
-        <div class="div-main1">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.2108872037275!2d-58.002491785015216!3d-34.95132268347941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e805f0cde1e5%3A0x5ae8118eda3587be!2sMas%20Materiales%20Sa!5e0!3m2!1ses-419!2sar!4v1673393394847!5m2!1ses-419!2sar" id="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="div-titulo1">
-                <h1>Titulo 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In odio recusandae accusantium culpa quaerat
-                    delectus maiores laboriosam atque tempora. Quam quisquam, iste dignissimos sequi rem repellat ipsam
-                    aliquam iusto atque.</p>
+    <div class="contacto-grid">
+        <header class="header-contacto">
+                 <nav class="navbar navbar-expand-lg fondo-menu">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html"><img src="../img/LogoMM.png" class="boton-nav" id="logo-mas" alt="logo de mas materiales"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active boton-nav" aria-current="page" href="productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active boton-nav" aria-current="page" href="about.html">Sobre nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active boton-nav" aria-current="page" href="contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="carrito.html"><img src="../img/carrito.png" class="boton-nav" id="logo-carrito" alt="logo del carrito"></a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            
+            <!-- imagen de banner -->
+            <div class="contacto-banner"> <img src="../img/bannerMM.png" id="banner" alt="imagen con productos de contruccion">
             </div>
-        </div>
-
-        <div class="div-main2">
-            <img src="../img/LogoMM.png" id="imagen-main2" alt="otra imagen representando mas materiales">
-            <div class="div-titulo2">
-                <h2>Titulo 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga illum, ipsum autem esse aliquid
-                    doloribus quo excepturi quos architecto necessitatibus dolores assumenda nobis ducimus eum vero
-                    optio nihil nemo aliquam?</p>
+        </header>
+        <!-- contenido del main -->
+        <main class="contenedor-main-contacto">
+            <div data-aos="fade-up" class="contacto-main">
+                <div class="div-contacto-img">
+                    <img src="../img/img-about1.jpg" class="img-contacto" alt="frente del local de mas materiales">
+                </div>
+                <div class="titulo-contacto">
+                    <h1>Nuestros horarios</h1>
+                    <h3>De lunes a viernes de 8:00Hs a 12:30Hs y de 14:30Hs a 18:00Hs </h3>
+                    <h3>Sabados de 8:00Hs a 13:00Hs</h3>
+                    <h4>Telefono: 221 414 1020</h4>
+                    
+                </div>
             </div>
-        </div>
-    </main>
-    <!-- footer -->
-    <footer>
-        <div class="div-footer">
-            <h3 class="h3-footer"> todos los derechos reservados</h3>
-        </div>
-    </footer>
-
+        
+            <div data-aos="fade-up" class="contacto-main">
+                <div class="div-contacto-img">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.2108872037275!2d-58.002491785015216!3d-34.95132268347941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e805f0cde1e5%3A0x5ae8118eda3587be!2sMas%20Materiales%20Sa!5e0!3m2!1ses-419!2sar!4v1673393394847!5m2!1ses-419!2sar" class="img-contacto" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="titulo-contacto">
+                    <h2>Donde encontrarnos</h2>
+                    <h5>Nos localizamos en San Carlos, La Plata, Avenida 44 nro2755</h5>
+                    <h6>Te esperamos.</h6>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer>
+            <div class="div-footer">
+                <p>©Todos los derechos reservados</p>
+                <div class="reclamo">
+                    <p>por cualquier reclamo</p>
+                    <a href="" class="boton-footer">click aquí</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- script bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- script de aos -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

@@ -1,0 +1,71 @@
+// imports
+@import "../base/extend";
+@import "../base/mixin";
+        /*estilos de about*/
+/* estilos del header*/
+.about-grid{
+    .header-about{
+        nav{
+            ul{
+                justify-content: center;
+                align-items: center;
+                
+            }
+        }
+
+    }
+    .main-about{
+        .div-main-about{
+            @extend %flex-mobile;
+            .contenedor-img-main{
+                    @include centrar-main;
+            }
+            .img-main-about{
+                    @include img(70%,70%);
+            }
+            .div-titulo-about{
+                    margin: 0.6rem;
+                    text-align: center;
+            }
+        }
+    }
+}
+/*estilos para tablet*/
+@media screen and (min-width:600px){
+    .about-grid{
+    @include grid-tablet;
+    .main-about{
+        @include grid-tablet-dos;
+        .div-main-about{
+            @include grid-tablet-tres;
+        }
+        .contenedor-img-main{
+            justify-content: flex-start !important;
+                margin-left: 1rem;
+        }
+        .div-titulo-about{
+            text-align: start !important;
+        }
+        .img-main-about{
+            @include img(80%,80%);
+        }
+    }
+}
+}
+/* estilos para desktop */
+@media screen and (min-width:1024px){
+    .about-grid{
+        .header-about{
+            .fondo-menu{
+                @include menu-desktop;
+            }
+            .banner-about{
+                margin-top: 7rem;
+            }
+            .boton-nav:hover{
+                @include boton-menu;
+                }
+        }
+        
+    }
+}

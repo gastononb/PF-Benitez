@@ -1,0 +1,67 @@
+        //mixin 
+// imports
+@import "../base/variables";
+
+// mixin color fondo principal
+@mixin color-fondo{
+    background-color: $color-fondo1;
+    background: linear-gradient(90deg, $color-fondo1 0%, $color-fondo2 100%, $color-fondo3 100%);
+}
+// mixin color de fondo del menu
+@mixin fondo-menu{
+    background: $color-menu1;
+    background: linear-gradient(90deg, $color-menu1 0%, $color-menu2 100%, $color-menu3 100%);
+}
+// mixin botones del menu
+@mixin boton-menu{
+        background-color: rgb(164, 177, 188);
+        border-bottom: 1px;
+        border-left: 1px;
+        box-shadow: 2px 2px 16px ;
+        transition: all 0.3s ease;
+}
+// mixin centrar
+@mixin centrar-main{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+// tamaño img con parametro
+@mixin img($alto, $ancho){
+        width: $ancho !important;
+        height: $alto !important;
+        box-shadow: 3px 3px 2px;
+}
+// grid para tablet
+@mixin grid-tablet{
+        display: grid !important;
+        height: 100vh !important;
+        grid-template-rows: 0.2fr 3fr 0.2fr !important;
+}
+@mixin grid-tablet-dos{
+        display: grid !important;
+        grid-template-rows: 1fr 1fr !important;
+}
+@mixin grid-tablet-tres{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        align-items: center;
+        gap: 1rem;
+}
+// mixin para desktop
+@mixin menu-desktop{
+        position: fixed;
+        width: 100%;
+        z-index: 30;
+        top: 0;
+}
+// mixin carrito
+@mixin boton-carrito{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:1.25rem;
+        margin-right: 1.25rem;
+        text-decoration: none;
+        
+}

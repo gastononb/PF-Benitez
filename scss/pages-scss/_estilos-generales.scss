@@ -1,0 +1,46 @@
+// imports
+@import "base/mixin";
+
+/* estilos generales */
+body{
+    @include color-fondo;
+    .fondo-menu{
+        @include fondo-menu;
+    }
+    footer{
+        margin-top: 1rem;
+        .div-footer{
+            margin: top 0.5rem;
+            border-top: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content:center;
+            align-items: center;
+            .reclamo{
+                display: flex;
+                gap: 1rem;
+                .boton-footer{
+                    color: black;
+                }
+                }
+            
+        }
+    }
+}
+
+#logo-mas{
+    width: 8.5rem;
+    height: 5.5rem;
+}
+/* estilos imagenes generales */
+#banner{
+    
+    height: 100%;
+    width: 100%;
+}
+#logo-carrito{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    margin: 0.6rem;}
