@@ -5,8 +5,7 @@
 .header-carrito{
     nav{
         ul{
-            align-items: center;
-            justify-content: center;
+            @include separar-menu;
         }
     }
 }

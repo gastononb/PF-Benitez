@@ -6,7 +6,28 @@ body {
     background: #4d6360;
     background: linear-gradient(90deg, #4d6360 0%, #42546f 100%, #395054 100%); }
   body footer {
+    background: #4d6360;
+    background: linear-gradient(90deg, #4d6360 0%, #42546f 100%, #395054 100%);
     margin-top: 1rem; }
+    body footer .footer-contenedor {
+      display: flex;
+      justify-content: space-around; }
+      body footer .footer-contenedor .footer-hijo {
+        align-items: center; }
+        body footer .footer-contenedor .footer-hijo .logo-footer {
+          color: black;
+          font-size: 1.6rem;
+          font-weight: 500;
+          text-decoration: none; }
+        body footer .footer-contenedor .footer-hijo ul li {
+          display: flex;
+          flex-direction: column; }
+          body footer .footer-contenedor .footer-hijo ul li a {
+            margin: 0.3rem;
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+            border-bottom: 1px solid black; }
     body footer .div-footer {
       margin: top 0.5rem;
       border-top: 1px solid black;
@@ -44,7 +65,10 @@ body {
 
 /* estilos del index*/
 .index-grid .header-index nav ul {
-  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  justify-content: end !important;
   align-items: center; }
 
 .index-grid .main-index .div-main-index .index-img-main {
@@ -113,7 +137,10 @@ body {
 /*estilos de about*/
 /* estilos del header*/
 .about-grid .header-about nav ul {
-  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  justify-content: end !important;
   align-items: center; }
 
 .about-grid .main-about .div-main-about .contenedor-img-main {
@@ -179,7 +206,10 @@ body {
 
 /*estilos de productos*/
 .productos-header nav ul {
-  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  justify-content: end !important;
   align-items: center; }
 
 .main-productos {
@@ -234,7 +264,10 @@ body {
 
 /* estilos de contacto*/
 .contacto-grid .header-contacto nav ul {
-  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  justify-content: end !important;
   align-items: center; }
 
 .contacto-grid .contenedor-main-contacto .contacto-main .div-contacto-img {
@@ -244,7 +277,8 @@ body {
   align-items: center; }
 
 .contacto-grid .contenedor-main-contacto .titulo-contacto {
-  text-align: center; }
+  text-align: center;
+  margin-top: 0.5rem; }
 
 .contacto-grid .contenedor-main-contacto .img-contacto {
   margin-top: 1rem;
@@ -300,8 +334,11 @@ body {
 
 /*estilos del carrito*/
 .header-carrito nav ul {
-  align-items: center;
-  justify-content: center; }
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  justify-content: end !important;
+  align-items: center; }
 
 .main-carrito {
   margin-top: 2rem; }

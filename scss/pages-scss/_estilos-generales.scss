@@ -8,7 +8,37 @@ body{
         @include fondo-menu;
     }
     footer{
+        @include fondo-menu;
         margin-top: 1rem;
+        .footer-contenedor{
+            display: flex;
+            justify-content: space-around;
+            .footer-hijo{
+                align-items: center;
+                
+                .logo-footer{
+                    color: black;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+                ul{
+                    li{ 
+                        display: flex;
+                        flex-direction: column;
+                        a{
+                        margin: 0.3rem;
+                        color: black;
+                        text-decoration: none;
+                        font-size: 1rem;
+                        border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
+
+        }
+        
         .div-footer{
             margin: top 0.5rem;
             border-top: 1px solid black;

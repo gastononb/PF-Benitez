@@ -20,6 +20,14 @@
         box-shadow: 2px 2px 16px ;
         transition: all 0.3s ease;
 }
+// mixin separar menu
+@mixin separar-menu{
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 100%;
+        justify-content:end!important;
+        align-items: center;
+}
 // mixin centrar
 @mixin centrar-main{
         margin-top: 1rem;

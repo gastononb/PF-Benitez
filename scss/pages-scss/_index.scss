@@ -7,8 +7,7 @@
     .header-index{
         nav{
             ul {
-                    justify-content: center;
-                    align-items: center;
+                @include separar-menu;
                 }
         }
     }

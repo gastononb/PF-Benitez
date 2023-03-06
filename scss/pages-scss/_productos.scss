@@ -5,8 +5,7 @@
 .productos-header{
     nav{
         ul{
-            justify-content: center;
-            align-items: center;
+            @include separar-menu;
         }
     }
 }
